@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trabalho Caw (pagina2)</title>
+
+  <style>
+
+    body{
+      background-color:#f0f8ff;
+    }
+
+    p{
+      border:2px dashed mediumaquamarine;
+      margin-right:75px;
+    }
+    
+    .logo{
+      height:100px;
+      padding-left:50px;
+      margin-top:20px;
+      float:left;
+      padding-bottom: 10px;
+      width:100px;
+    }
+
+    .carrinho{
+      display:flex;
+      overflow:hidden;
+      margin-right:20px;
+    }
+    
+    .login{
+      display:flex;
+      overflow:hidden;
+      margin-right:20px;
+    }
+    
+    header {
+      display:flex;
+      border: 1px solid lightsteelblue;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: lightsteelblue;
+      align-items:center;
+    }
+    
+    .selecao{
+    border:2px dashed black;
+    border-radius:10px;
+    text-align:center;
+    margin:auto;
+    }
+    
+    .produto{
+      width:150px;
+      margin-top:40px;
+      border: 3px inset black;
+      margin-left:100px;
+    }
+    
+    .produto2{
+      width:300px;
+      margin-top:40px;
+      border: 3px inset black;
+      margin-left:250px;
+    }
+    
+    .produto3{
+      width:200px;
+      margin-top:30px;
+      border: 3px inset black;
+      margin-left:200px;
+      height: 200px;
+    }
+
+    form{
+      display:flex;
+      text-align:center;
+      align-items:center;
+    }
+
+    .preço1{
+      border:1px dashed mediumaquamarine;
+      margin-top:20px;
+      padding-left:50px;
+      margin-left:100px;
+      color:white;
+      background-color:black;
+      padding:5px;
+    }
+
+    .preço2{
+      border:1px dashed mediumaquamarine;
+      margin-left:250px;
+      color:white;
+      background-color:black;
+      padding:5px;
+    }
+    
+    .preço3{
+      border:1px dashed mediumaquamarine;
+      margin-top:60px;
+      margin-left: 190px;
+      color:white;
+      background-color:black;
+      padding:5px;
+    }
+
+    .total{
+      margin-right:1000px;
+      display:flex;
+      border:1px dashed mediumaquamarine;
+      color:white;
+      background-color:black;
+      padding:3px;
+    }
+
+    .linkPag3{
+      text-align:center;
+      align-items:center;
+      border: 2px inset lightskyblue;
+      background-color:black;
+      border-radius:25px;
+      margin-left:450px;
+      margin-right:450px;
+    }
+
+    a{
+      color:limegreen;
+      font-family:Arial;
+    }
+
+    footer{
+    border: 1px solid lightsteelblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: lightsteelblue;
+    margin-top:50px;
+    text-align:center;
+    font-family: system-ui;
+    }
+
+    .card{
+      font-family:sans-serif;
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+
+  <header> 
+    <!--link para pag anterior:-->
+    <a href="https://trabalho-caw.danielmarujo200.repl.co/">
+  <img class="logo" src="https://ugc.production.linktr.ee/6q6ijCPaTFO9yCGwsUdv_myMcHih51qawK884" alt="logo">
+    </a>
+    <h3 class="selecao">🛍️Selecione Os Produtos Desejados🛍️</h3>
+  <button class="carrinho">SEU:🛒</button>
+  <button class="login">Bem Vindo:<br>
+  👩Maria Claudia</button>
+  </header>
+
+  <form>
+    <section>
+      <h5 class="preço1">Preço:R$167,00</h5>
+  <img class="produto" src="https://cdn.awsli.com.br/800x800/1286/1286642/produto/131963067/c079c55556.jpg" alt="produto"><br>
+      <input style="margin-left:95px;" id="quantidadeProduto1" type="number" placeholder="insira a quantidade" oninput="calcularTotal()">
+    </section>
+
+    <section>
+      <h5 class="preço2">Preço:R$124,00</h5>
+  <img class="produto2"
+    src="https://www.hipertrofia.org/blog/wp-content/uploads/2016/08/hemogenin.jpg" alt="produto 2">
+      <input style="margin-left:260px;" id="quantidadeProduto2" type="number" placeholder="insira a quantidade" oninput="calcularTotal()">
+    </section>
+
+    <section>
+    <h5 class="preço3">Preço:R$240,00</h5>
+  <img class="produto3" 
+    src="https://landerlanbrasil.com/wp-content/uploads/2022/10/ACETATO-DE-TREMBOLONA-75-MG-10-ML.jpg" alt="produto3">
+      <input style="margin-left:205px;" id="quantidadeProduto3" type="number" placeholder="insira a quantidade" oninput="calcularTotal()">
+    </section>
+  </form>
+
+  <form>
+    <section class="cartão">
+      <h2 class="card">Adicionar cartão:</h2>
+      <p>Selecione o tipo de cartão:</p>
+      <select style="margin-right:30px;width:150px;" name="debitoCredito">
+          <option value="credito">Crédito</option>
+          <option value="debito">Débito</option>
+      </select>
+      <br><br>
+      <p>N° do cartão:</p>
+      <input type="text" placeholder="insira o numero do cartão">
+      <br><br>
+      <p>Nome do titular:</p>
+      <input type="text" placeholder="insira o nome do titular">
+      <br><br>
+      <p>Data de vencimento:</p>
+      <input type="text" placeholder="insira a data de                 vencimento">
+      <br><br>
+      <p>Código de segurança:</p>
+      <input type="text" placeholder="insira o codigo de               segurança">
+      <br>
+    </section>
+  </form>
+  
+  <h1 class="total" id="total">Total:</h1>
+
+  <!--link para proxima página:-->
+  <h2 class="linkPag3"><a href="https://trabalho-cawpagina-3.danielmarujo200.repl.co/" target="_blank" title="Finalize Sua Compra!" >FINALIZAR COMPRA✅</a></h2>
+  
+  
+  
+  <script>
+    function calcularTotal() {
+      var quantidadeProduto1 = parseInt(document.getElementById('quantidadeProduto1').value) || 0;
+      var quantidadeProduto2 = parseInt(document.getElementById('quantidadeProduto2').value) || 0;
+      var quantidadeProduto3 = parseInt(document.getElementById('quantidadeProduto3').value) || 0;
+
+      var precoProduto1 = 167;
+      var precoProduto2 = 124;
+      var precoProduto3 = 240;
+
+      var total = quantidadeProduto1 * precoProduto1 + quantidadeProduto2 * precoProduto2 + quantidadeProduto3 * precoProduto3;
+      
+      document.getElementById('total').innerHTML = 'Total: R$' + total.toFixed(2);
+      
+    }
+  </script>
+
+  <footer>
+    <h2>Sua Compra está nos ultimos passos!!!</h2>
+  </footer>
+  
+</body>
+
+</html>
