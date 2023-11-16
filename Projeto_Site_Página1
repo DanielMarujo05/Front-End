@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trabalho Projeto 2CAW (pagina1)</title>
+
+<style>
+
+  body{
+    background-color:#f0f8ff;
+  }
+  
+  .caixa{
+      text-align:center;
+      position: relative;
+      width: auto;
+      height: 300px;
+      overflow: hidden;
+      margin: 20px auto;
+  }
+
+  .containerImg{
+      display: flex;
+  }
+
+  .seta {
+      position: absolute;
+      top: 30%;
+      font-size: 30px;
+      cursor: pointer;
+      overflow: hidden;
+  }
+
+  .seta.E{
+      left:10px;
+      background-color:red;
+      border:2px dashed black;
+  }
+
+  .seta.D {
+      right:10px;
+      background-color:red;
+      border:2px dashed black;
+  }
+  
+  h3{
+    margin-top: 100px;
+    margin-left:580px;
+    border: 4px solid black;
+    border-radius: 5px;
+    margin-right:570px;
+    text-align: center;
+  }
+  
+  .login{
+    margin-top:18px;
+    margin-left:100px;
+  }
+  
+  .carrinho{
+  margin-top:18px;
+  margin-left:200px;
+  }
+  
+  .logo{
+    height:100px;
+    padding-left:50px;
+    margin-top:20px;
+    float:left;
+    padding-bottom: 10px;
+  }
+  
+  input{ 
+    border-radius:10px;
+    margin-top: 20px;
+    padding:5px;
+    margin-left:380px;
+    text-align:center;
+  }
+  
+  header {
+    display:flex;
+    border: 1px solid lightsteelblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: lightsteelblue;
+    align-items: center;
+  }
+  .linkPag2{
+    border: 3px solid lightsteelblue;
+    background-color: deepskyblue;
+    text-align:center;
+    margin-left:470px;
+    margin-right:440px;
+    padding: 5px;
+    border-radius:25px;
+  }
+  footer{
+    display:flex;
+    border: 1px solid lightsteelblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: lightsteelblue;
+    margin-top:50px;
+  }
+
+  .suporte{
+    margin-top: 20px;
+    margin-left:20px;
+  }
+  
+  a{
+    color:black;
+  }
+  
+</style>
+  
+</head>
+
+<body>
+
+<header> 
+  <img class="logo" src="https://ugc.production.linktr.ee/6q6ijCPaTFO9yCGwsUdv_myMcHih51qawK884" alt="logo">
+</img>
+<input type="text" name="Pesquisa" size="40" placeholder="🔎O que está procurando?"/>
+<button class="carrinho">🛒🛒🛒</button>
+<button class="login">Login:🧑🏽‍💻</button>
+</header>
+
+  
+  
+<h3>OFERTAS</h3>
+  
+<div class="caixa">
+   <div class="containerImg">
+      <img src="https://drogariaspacheco.vteximg.com.br/arquivos/dpa-mktp_nestle-health_13-11-23_car-1296x290.png?v=638351293859630000" alt="Imagem 1">
+      <img src="https://www.drogariaspacheco.com.br/arquivos/dpsp-trade_famax-sunless_13-11-23_car-1296x290.png?v=638352284860170000" alt="Imagem 2">
+      <img src="https://www.drogariaspacheco.com.br/arquivos/dpsp-trade_ache-profuse_13-11-23_car-1296x290.png?v=638352423749500000" alt="Imagem 3">
+      <img src="https://www.drogariaspacheco.com.br/arquivos/dpa-trade_bella-aurora-dermo_13-11-23_car-1296x290.png?v=638352441379470000" alt="Imagem 4">
+      <img src="https://www.drogariaspacheco.com.br/arquivos/dsp-trade_fqm-imecap_13-11-23_super-1296x290.png?v=638352458670600000" alt="Imagem 5">
+    </div>
+      <div class="seta E" onclick="imagemAnterior()">⇚</div>
+      <div class="seta D" onclick="proximaImagem()">⇛</div>
+</div>
+
+<!--Navegação para prox pag:-->
+<h2 class="linkPag2"><a href="https://pagina-2-trab-caw.danielmarujo200.repl.co/" target="_blank" title="Compre Agora!!!" >COMPRAR</a></h2>
+  
+<script>
+
+  let indiceAtual = 0;
+  const totalDeImagens = 5;
+
+  function exibirImagem(indice) {
+    const container = document.querySelector('.containerImg');
+    const novaPosicao = -indice * 100 + '%';
+    container.style.transform = 'translateX(' + novaPosicao + ')';
+  }
+
+  function proximaImagem() {
+    indiceAtual = (indiceAtual + 1) % totalDeImagens;
+    exibirImagem(indiceAtual);
+  }
+
+  function imagemAnterior() {
+    indiceAtual = (indiceAtual - 1 + totalDeImagens) % totalDeImagens;
+    exibirImagem(indiceAtual);
+  }
+    
+</script>
+
+  <footer>
+
+  <img class="logo" src="https://ugc.production.linktr.ee/6q6ijCPaTFO9yCGwsUdv_myMcHih51qawK884" alt="logo"/>
+
+  <p class="suporte">Suporte<br>
+    telefone:📞(21)988234285<br>
+    e-mail:SuporteMarujosFarmacia@gmail.com<br>
+    Endereço:Rua José Bonifácio de Andrade, n190
+  </p>
+    
+  </footer>
+  
+</body>
+
+</html>
