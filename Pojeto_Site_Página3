@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <meta charset="utf-8">
+  <title>Trabalho Caw (pagina3)</title>
+  <style>
+    body{
+      background-color:#f0f8ff;
+    }
+    header {
+      border: 1px solid lightsteelblue;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: lightsteelblue;
+      align-items:center;
+      text-align:center;
+    }
+    .logo{
+      width:150px;
+    }
+    .obg{
+      width:250px;
+      margin-left:540px;
+      margin-top:100px;
+      border:3px inset darkblue;
+      border-radius:50%
+    }
+    .compra{
+      border: 2px solid black;
+      border-radius:50%;
+      width:45px;
+      height:50px;
+      background-color:limegreen;
+      padding-top:5px;
+      padding-left:13px;
+      margin-left:50px;
+    }
+    .nota{
+      border: 2px solid black;
+      border-radius:50%;
+      width:45px;
+      height:50px;
+      background-color:limegreen;
+      padding-top:7px;
+      padding-left:13px;
+      margin-left:47px;
+      margin-top:-20px;
+    }
+    .emTransito{
+      border: 2px solid black;
+      border-radius:50%;
+      width:45px;
+      height:50px;
+      background-color:limegreen;
+      padding-top:7px;
+      padding-left:13px;
+      margin-left:47px;
+      margin-top:-20px;
+    }
+    .entregue{
+      border: 2px solid black;
+      border-radius:50%;
+      width:45px;
+      height:50px;
+      padding-top:7px;
+      padding-left:13px;
+      margin-left:47px;
+      margin-top:-20px;
+    }
+    aside{
+      float:right;
+    }
+    .Anuncio{
+      max-width:150px;
+      height:400px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+    .linkPag2{
+      margin-left:540px;
+      margin-top:150px;
+      border:3px dashed antiquewhite;
+      background-color:black;
+      border-radius:15px;
+      padding:3px;
+      margin-right:482px;
+    }
+    a{
+      color:floralwhite;
+      font-family:Arial;
+    }
+    footer{
+      text-align:center;
+      border: 1px solid lightsteelblue;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: lightsteelblue;
+      margin-top:50px;
+    }
+    iframe{
+      padding:10px;
+    }
+    .linhas{
+      margin-top: -20px;
+      margin-left:70px;
+      display:inline-block;
+      background-color: limegreen;
+    }
+    .linhasB{
+      margin-top: -20px;
+      margin-left:70px;
+      display:inline-block;
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+
+  <header> 
+    <!--link para pag inicial:-->
+   <a href="https://trabalho-caw.danielmarujo200.repl.co/">   <img class="logo" src="https://ugc.production.linktr.ee/6q6ijCPaTFO9yCGwsUdv_myMcHih51qawK884" alt="logo"> </a>
+  </header>
+  
+  <img class="obg" src="https://down-br.img.susercontent.com/file/sg-11134201-7rbn5-ln8m5r4gwxf9b7" alt="agradecimento">
+
+  <aside>
+    <!--link para pag inicial:-->
+    <a href="https://trabalho-caw-pag1.danielmarujo200.repl.co/" target="_blank"><img class="Anuncio" src="https://i.pinimg.com/736x/8f/56/e2/8f56e2db867201a074fd27d364217213.jpg" alt="Anuncio">
+    </a>
+    
+    <br>
+    <!--link para pag inicial:-->
+   <a href="https://trabalho-caw-pag1.danielmarujo200.repl.co/" target="_blank"> <img class="Anuncio" src="https://image.isu.pub/180709151147-73fd1962a1b55728a4dabf0357f29093/jpg/page_1_thumb_large.jpg" alt="Anuncio">
+   </a>
+    
+  </aside>
+  <!--link para segunda página:-->
+  <a href="https://pagina-2-trab-caw.danielmarujo200.repl.co/">     <h2 class="linkPag2">🛒Compre Novamente🛒</h2>
+ </a>
+  
+  <section style="overflow:hidden;margin-top:-500px;">
+  <h1 class="compra">🛒</h1>
+  <br>
+    <h3 style="margin-top:-40px;">Pagamento realizado</h3>
+     <h1 class="linhas">
+       |  |<br>
+       |  |<br>
+       |  |<br>
+       |  |<br>
+       |  |<br>
+     </h1>
+  <h1 class="nota">📝</h1>
+    <h3 style="margin-top:-20px;">Nota Fiscal Emitida</h3>
+     <h1 class="linhas">
+       |  |<br>
+       |  |<br>
+       |  |<br>
+       |  |<br>
+       |  |<br>
+     </h1>
+  <h1 class="emTransito">🚚</h1>
+    <h3 style="margin-top:-20px;margin-left:25px;">Em Trânsito</h3>
+     <h1 class="linhasB">
+       |  |<br>
+       |  |<br>
+       |  |<br>
+       |  |<br>
+       |  |<br>
+     </h1>
+  <h1 class="entregue">✅</h1>
+    <h3 style="margin-top:-20px;margin-left:25px;">Produto Entregue</h3>
+  </section>
+
+  <footer>
+      <iframe width="400" height="200"                           src="https://www.youtube.com/embed/QsVIiD0YjD4?si=Im4HVqSC9nzmg3Cm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+  </footer>
+  
+</body>
+
+</html>
